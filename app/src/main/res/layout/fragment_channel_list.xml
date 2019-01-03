@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="me.sweetll.tucao.business.home.viewmodel.ChannelListViewModel" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        tools:paddingTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="动画"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="19"
+                        android:text="更多>>"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:columnCount="3"
+                    app:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="28"
+                        android:text="MAD·AMV·GMV"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="6"
+                        android:text="MMD·3D"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="25"
+                        android:text="原创·配音"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="29"
+                        android:text="综合·周边·其他"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="音乐"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="20"
+                        android:text="更多>>"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    app:columnCount="3"
+                    app:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="7"
+                        android:text="acg音乐"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="31"
+                        android:text="翻唱·原唱"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="37"
+                        android:text="舞蹈"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="30"
+                        android:text="VOCALOID·UTAU"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="40"
+                        android:text="演奏·乐器"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="88"
+                        android:text="op·ed·ost·角色歌"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="52"
+                        android:text="Live·声优相关"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="游戏"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="21"
+                        android:text="更多>>"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:columnCount="3"
+                    app:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="8"
+                        android:text="游戏影音"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="34"
+                        android:text="网络游戏"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="44"
+                        android:text="单机游戏"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="33"
+                        android:text="电子竞技"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="42"
+                        android:text="家机·掌机·手机"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="三次元"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="22"
+                        android:text="更多>>"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:columnCount="3"
+                    app:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="9"
+                        android:text="喜闻乐见"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="32"
+                        android:text="娱乐鬼触"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="57"
+                        android:text="科技·数码"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="61"
+                        android:text="运动·体育"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="65"
+                        android:text="军事情报"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="15"
+                        android:text="宠物·猫·狗"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="影剧"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="23"
+                        android:text="更多>>"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:columnCount="3"
+                    app:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="39"
+                        android:text="电视剧"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="38"
+                        android:text="电影"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="16"
+                        android:text="娱乐综艺"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="27"
+                        android:text="完结剧集"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="新番"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="24"
+                        android:text="更多>>"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:columnCount="3"
+                    app:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="11"
+                        android:text="连载新番"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="43"
+                        android:text="天朝出品"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="26"
+                        android:text="OAD·OVA·剧场版"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#EEEEEE"
+                        android:gravity="center"
+                        android:onClick="@{viewModel::onClickChannel}"
+                        android:tag="10"
+                        android:text="完结番组"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</layout>

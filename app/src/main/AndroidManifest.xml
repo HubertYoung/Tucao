@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="me.sweetll.tucao">
+
+    <!-- 请求访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 请求访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 请求读写内存 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 登录 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".business.splash.SplashActivity"
+            
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".business.home.MainActivity"
+             />
+        <activity
+            android:name=".business.login.LoginActivity"
+            
+            android:theme="@style/Translucent.Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".business.login.ForgotPasswordActivity"
+             />
+        <activity
+            android:name=".business.login.RegisterActivity"
+             />
+        <activity
+            android:name=".business.personal.PersonalActivity"
+            
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".business.channel.ChannelDetailActivity"
+             />
+        <activity
+            android:name=".business.video.CachedVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".business.video.VideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".business.video.ReplyActivity"
+            
+            android:theme="@style/Me.Sweetll.Comments"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".business.search.SearchActivity"
+            
+            android:theme="@style/Translucent.Search" />
+        <activity
+            android:name=".business.rank.RankActivity"
+             />
+        <activity
+            android:name=".business.browser.BrowserActivity"
+             />
+        <activity
+            android:name=".business.showtimes.ShowtimeActivity"
+             />
+        <activity
+            android:name=".business.home.PlayHistoryActivity"
+             />
+        <activity
+            android:name=".business.home.StarActivity"
+             />
+        <activity
+            android:name=".business.uploader.UploaderActivity"
+             />
+        <activity
+            android:name=".business.home.MessageListActivity"
+            android:theme="@style/Me.Sweetll.Message"
+             />
+        <activity
+            android:name=".business.home.MessageDetailActivity"
+            android:theme="@style/Me.Sweetll.Message"
+            
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".business.download.DownloadActivity"
+            android:parentActivityName=".business.home.MainActivity"
+             />
+        <activity
+            android:name=".business.download.DownloadSettingActivity"
+             />
+        <activity
+            android:name=".business.explorer.FileExplorerActivity"
+            
+            android:theme="@style/FileExplorerTheme" />
+        <activity
+            android:name=".business.home.AboutActivity"
+            
+            android:theme="@style/AboutTheme" />
+        <activity
+            android:name=".business.drrr.DrrrListActivity"
+             />
+        <activity
+            android:name=".business.drrr.DrrrDetailActivity"
+             />
+        <activity android:name=".business.drrr.DrrrNewPostActivity"
+            android:theme="@style/Me.Sweetll.Drrr"
+            
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+        <service
+            android:name=".rxdownload.function.DownloadService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="587653cd310c93051a000ac9" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Google Play" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

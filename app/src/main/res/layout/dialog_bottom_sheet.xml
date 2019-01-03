@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:paddingBottom="45dp">
+
+    <View
+        android:id="@+id/touch_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:soundEffectsEnabled="false"/>
+
+    <FrameLayout
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="45dp"
+        android:layout_gravity="center_horizontal|top"
+        android:clickable="true"
+        app:layout_behavior="me.sweetll.tucao.widget.CustomBottomSheetBehavior"
+        style="?attr/bottomSheetStyle"/>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:elevation="@dimen/design_bottom_sheet_modal_elevation"
+        android:background="@drawable/bg_white_rectangle_grey_border">
+
+        <Button
+            android:id="@+id/btn_pick_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="center"
+            android:text="全部选择"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/divider" />
+
+        <Button
+            android:id="@+id/btn_start_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="开始下载"
+            android:textSize="14sp"
+            android:textColor="@color/selector_start_download"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
